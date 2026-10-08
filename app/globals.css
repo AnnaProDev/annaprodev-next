@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@import "./colorPalette.css";
+
+/* Dark mode is controlled by the `.dark` class that next-themes puts on <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+
+/* Expose tokens to Tailwind: bg-card, text-muted, border-line, shadow-hard… */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-card: var(--card);
+  --color-line: var(--line);
+  --color-text: var(--text);
+  --color-body: var(--body);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-text: var(--accent-text);
+  --color-ink: var(--ink);
+  --color-error: var(--error);
+
+  /*noinspection CssUnresolvedCustomProperty*/
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  /*noinspection CssUnresolvedCustomProperty*/
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  /*noinspection CssUnresolvedCustomProperty*/
+  --font-display: var(--font-onest), var(--font-geist-sans), system-ui, sans-serif;
+
+  --radius-btn: 14px;
+  --radius-field: 12px;
+  --radius-card: 20px;
+  --radius-panel: 28px;
+
+  /* Hard offset shadows — the signature of the kit */
+  --shadow-hard-sm: 3px 3px 0 var(--line);
+  --shadow-hard: 4px 4px 0 var(--line);
+  --shadow-hard-md: 6px 6px 0 var(--line);
+  --shadow-hard-lg: 10px 10px 0 var(--line);
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+  html.dark {
+    color-scheme: dark;
+  }
+  body {
+    @apply bg-bg text-text font-sans antialiased;
+  }
+}
+
+/* Graph-paper background: add `grid-paper` to any section */
+@utility grid-paper {
+  /*noinspection CssUnresolvedCustomProperty*/
+  background-image:
+          linear-gradient(var(--grid) 1px, transparent 1px),
+          linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Striped placeholder for screenshots that aren't ready yet */
+@utility hatch {
+  background: repeating-linear-gradient(
+          135deg,
+          var(--hatch-a) 0 12px,
+          var(--hatch-b) 12px 24px
+  );
+}

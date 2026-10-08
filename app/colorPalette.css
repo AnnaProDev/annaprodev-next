@@ -1,0 +1,238 @@
+/* ============================================================
+   Color palette
+   ------------------------------------------------------------
+   All site colors live here. Components never use raw hex values,
+   only these variables (through Tailwind: bg-card, text-muted…).
+
+   To try another palette: comment out the active block and
+   uncomment one of the alternatives below.
+   ============================================================ */
+
+/* ---------- Active: Mustard & teal ---------- */
+:root {
+  --bg: #edf0ea;
+  --card: #fcfdf9;
+  --line: #0e2a2c;
+  --text: #0e2a2c;
+  --body: #2f4546;
+  --muted: #53686a;
+  --glow-1: var(--accent);
+  --glow-2: #5fc9a8;
+  --glow-opacity: 0.45;
+  --grain-opacity: 0.2;
+  --hatch-a: #e1e7df;
+  --hatch-b: #e9eee6;
+
+  --accent: #f5b82e;       /* fills: buttons, badges, highlights */
+  --accent-text: #865700;  /* small coloured text on --bg / --card */
+  --ink: #0e2a2c;          /* text on top of --accent, same in both themes */
+  --error: #b42318;
+}
+
+.dark {
+  --bg: #0b1f21;
+  --card: #122a2d;
+  --line: #33514f;
+  --text: #eaf1ec;
+  --body: #c3d2cc;
+  --muted: #97aba6;
+  --glow-opacity: 0.38;
+  --grain-opacity: 0.14;
+  --hatch-a: #16302f;
+  --hatch-b: #1b3634;
+
+  --accent-text: #f5c451;
+  --error: #ff8a80;
+}
+
+/* ---------- Alternative: Periwinkle ----------
+   :root {
+     --bg: #efeef6;
+     --card: #ffffff;
+     --line: #141733;
+     --text: #141733;
+     --body: #3a3d55;
+     --muted: #5c6078;
+     --glow-1: var(--accent);
+     --glow-2: #f2a7cf;
+     --glow-opacity: 0.45;
+     --grain-opacity: 0.2;
+     --hatch-a: #e5e4ef;
+     --hatch-b: #edecf4;
+
+     --accent: #8c9bff;
+     --accent-text: #3b4bc8;
+     --ink: #141733;
+     --error: #b42318;
+   }
+
+   .dark {
+     --bg: #111325;
+     --card: #1a1d33;
+     --line: #3f4466;
+     --text: #ecedf7;
+     --body: #c5c8dc;
+     --muted: #9da1bc;
+     --glow-opacity: 0.38;
+     --grain-opacity: 0.14;
+     --hatch-a: #1e2138;
+     --hatch-b: #23263f;
+
+     --accent-text: #a9b4ff;
+     --error: #ff8a80;
+   }
+*/
+
+/* ---------- Alternative: Teal & pink ----------
+   :root {
+     --bg: #edf0ea;
+     --card: #fcfdf9;
+     --line: #0e2a2c;
+     --text: #0e2a2c;
+     --body: #2f4546;
+     --muted: #53686a;
+     --glow-1: var(--accent);
+     --glow-2: #5fc9a8;
+     --glow-opacity: 0.45;
+     --grain-opacity: 0.2;
+     --hatch-a: #e1e7df;
+     --hatch-b: #e9eee6;
+
+     --accent: #ff7ab8;
+     --accent-text: #b0226a;
+     --ink: #0e2a2c;
+     --error: #b42318;
+   }
+
+   .dark {
+     --bg: #0b1f21;
+     --card: #122a2d;
+     --line: #33514f;
+     --text: #eaf1ec;
+     --body: #c3d2cc;
+     --muted: #97aba6;
+     --glow-opacity: 0.38;
+     --grain-opacity: 0.14;
+     --hatch-a: #16302f;
+     --hatch-b: #1b3634;
+
+     --accent-text: #ff9acb;
+     --error: #ff8a80;
+   }
+*/
+
+
+
+/* ---------- Alternative: Pink punch ----------
+   :root {
+     --bg: #f6eeea;
+     --card: #fffbf8;
+     --line: #1b1220;
+     --text: #1b1220;
+     --body: #43363f;
+     --muted: #6b5b66;
+     --glow-1: var(--accent);
+     --glow-2: #5fc9a8;
+     --glow-opacity: 0.45;
+     --grain-opacity: 0.2;
+     --hatch-a: #efe4e0;
+     --hatch-b: #f5ece8;
+
+     --accent: #ff7ab8;
+     --accent-text: #b0226a;
+     --ink: #1b1220;
+     --error: #b42318;
+   }
+
+   .dark {
+     --bg: #170f1b;
+     --card: #221827;
+     --line: #4f3f57;
+     --text: #f6ecf1;
+     --body: #d5c6cf;
+     --muted: #ad9ba8;
+     --glow-opacity: 0.38;
+     --grain-opacity: 0.14;
+     --hatch-a: #271c2c;
+     --hatch-b: #2d2132;
+
+     --accent-text: #ff9acb;
+     --error: #ff8a80;
+   }
+*/
+
+/* ---------- Alternative: Lilac pastel ----------
+   :root {
+     --bg: #f3eef6;
+     --card: #fffbfe;
+     --line: #2a1f3d;
+     --text: #2a1f3d;
+     --body: #4a3f5a;
+     --muted: #6e6380;
+     --glow-1: var(--accent);
+     --glow-2: #5fc9a8;
+     --glow-opacity: 0.45;
+     --grain-opacity: 0.2;
+     --hatch-a: #eae3ef;
+     --hatch-b: #f1ebf4;
+
+     --accent: #e6a8e0;
+     --accent-text: #8e3e88;
+     --ink: #2a1f3d;
+     --error: #b42318;
+   }
+
+   .dark {
+     --bg: #1e1828;
+     --card: #292134;
+     --line: #4e4260;
+     --text: #f3ecf7;
+     --body: #d3c8db;
+     --muted: #aba0b6;
+     --glow-opacity: 0.38;
+     --grain-opacity: 0.14;
+     --hatch-a: #2b2336;
+     --hatch-b: #31283c;
+
+     --accent-text: #f0b8ea;
+     --error: #ff8a80;
+   }
+*/
+
+/* ---------- Alternative: Tomato ----------
+   :root {
+     --bg: #efeae0;
+     --card: #fffdf8;
+     --line: #15120f;
+     --text: #15120f;
+     --body: #3d3830;
+     --muted: #5f584e;
+     --glow-1: var(--accent);
+     --glow-2: #5fc9a8;
+     --glow-opacity: 0.45;
+     --grain-opacity: 0.2;
+     --hatch-a: #e9e3d6;
+     --hatch-b: #f1ece2;
+
+     --accent: #e8704f;
+     --accent-text: #a8452a;
+     --ink: #15120f;
+     --error: #b42318;
+   }
+
+   .dark {
+     --bg: #15120f;
+     --card: #1f1b17;
+     --line: #5a5248;
+     --text: #f1ece3;
+     --body: #cfc7bb;
+     --muted: #a69e92;
+     --glow-opacity: 0.38;
+     --grain-opacity: 0.14;
+     --hatch-a: #26211c;
+     --hatch-b: #2c2721;
+
+     --accent-text: #f0896a;
+     --error: #ff8a80;
+   }
+*/
