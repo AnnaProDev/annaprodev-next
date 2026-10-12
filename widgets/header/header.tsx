@@ -2,6 +2,7 @@
 
 import styles from "./header.module.css"
 import Link from "next/link";
+import {ThemeToggle} from "@/features/theme-toggle/ThemeToggle";
 
 export const Header = () => {
     return (
@@ -22,7 +23,9 @@ export const Header = () => {
                         Contact
                     </Link>
                 </li>
+                <li><ThemeToggle /></li>
             </ul>
         </nav>
-    )
+
+)
 }
